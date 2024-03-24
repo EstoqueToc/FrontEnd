@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: Poppins, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    color: black;
+    background-color: #f3b44c;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    align-items: center;
+    height: 30%;
+}
+
+.contentImage img{
+    width: 100%;
+    height: 500px;
+}
+
+.contentImage::before {
+    content: ""; /* Crie um pseudo-elemento para a máscara */
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(243, 180, 76, 0.25); /* Laranja com 30% de transparência */
+    z-index: 1; /* Certifique-se de que a máscara fique sobre a imagem */
+  }
+
+  .metas h2{
+    text-align: justify;
+    font-size: 40px;
+    margin: 25px 20px auto;   
+  }
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+.card-crescer {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto 20px;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius:14px;
+  border-top-right-radius: 14px
+}
+
+.card__image--crescer {
+    background-color: #f3b34c91;
+  img {
+    width: 700px;
+    position: relative;    
+    bottom: 31%;
+    right: 58%
+  }
+}
+
+.card-tema {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.card-unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
