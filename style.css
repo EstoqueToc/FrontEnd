@@ -1,21 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
+    background-color: #efefef;
     font-family: Poppins, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.navbar{
-    color: black;
-    background-color: #f3b44c;
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-    align-items: center;
-    height: 30%;
-}
+/* ------------------- HEADER ---------------------------- */
 
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  header{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    background-color: black;
+  }
+  
+  header.sticky{
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  header.sticky a {
+    color: #004D3D;
+  }
+  
+  header.sticky .btn-entrar{
+    color: #fff;
+    background-color: #004D3D;
+    border-radius: 8px;
+   
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+  }
+  
+  header img{
+      width: 100px;
+  }
+  
+  header ul{
+    list-style: none;
+  }   
+  
+  header ul li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  button{
+    padding: 8px;
+    background-color: #fff;
+    color: #004D3D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    /* width: 5em; */
+    transition: 0.6s;
+  }
+  
+  button:active {
+    color: white;
+    transform: translateY(0.2rem);
+    border: 1px solid white;
+   }
+   
+   button:hover:not(:disabled) {
+    background: #86B649;
+    color: white;
+    transform: scale(1.1);
+    border: 1px solid white;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+   
 /*-------------------Sessão Inicial-------------------*/
 
 .contentImage img{
@@ -76,7 +160,7 @@ body{
 }
 
 .box{
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
