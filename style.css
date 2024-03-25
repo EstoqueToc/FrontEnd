@@ -16,80 +16,218 @@ body{
     height: 30%;
 }
 
+/*-------------------Sessão Inicial-------------------*/
+
 .contentImage img{
-    width: 100%;
-    height: 500px;
+        background-image: url(../assets/nosComVoce.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 .contentImage::before {
     content: ""; /* Crie um pseudo-elemento para a máscara */
     position: absolute;
     width: 100%;
-    height: 500px;
-    background-color: rgba(243, 180, 76, 0.25); /* Laranja com 30% de transparência */
-    z-index: 1; /* Certifique-se de que a máscara fique sobre a imagem */
+    height: 90vh;
+    background-color: rgba(243, 180, 76, 0.2);
+    z-index: 1; 
   }
+
 
   .metas h2{
     text-align: justify;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
     margin: 25px 20px auto;   
   }
 
-.wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  
-  &:focus {
-    outline: 0;
-  }
+  /* ----------------Sessão 1------------------------ */
+.sessao-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-crescer {
-  background: white;
-  width: 300px;
-  display: inline-block;
-  margin: auto 20px;
-  border-radius: 19px;
-  position: relative;
-  text-align: center;
-  box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
+
+.sessao-1 .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
 }
 
-.card__image {
-  position: relative;
-  height: 230px;
-  margin-bottom: 35px;
-  border-top-left-radius:14px;
-  border-top-right-radius: 14px
+.sessao-1 h1{
+    color: black;
 }
 
-.card__image--crescer {
-    background-color: #f3b34c91;
-  img {
-    width: 700px;
-    position: relative;    
-    bottom: 31%;
-    right: 58%
-  }
+.metas{
+    display: flex;
+    justify-content: space-between;
 }
 
-.card-tema {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 3px;
+.box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    transition: 0.6s;
+    border-radius: 10px;
 }
 
-.card-unit-name {
-  font-size: 26px;
-  color: black;
-  font-weight: 900;
-  margin-bottom: 5px;
+.box h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
 }
 
-.card-description {
-  padding: 20px;
-  margin-bottom: 10px;  
+.box p{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+#box-1, #box-3{
+    background-color: #edb964;
+    margin: 15px;
+}
+
+#box-2, #box-4{
+    background-color: #f3b44c;
+    margin: 15px;
+}
+
+
+/*-------------------- Somos Mais ---------------------*/
+
+.somosMais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #edb964;
+    color: white;
+    font-size: 16px;
+}
+
+.somosMais span{
+    font-size: 16px;
+    color: #61005d; /*c6b1ff*/
+    cursor: pointer;
+}
+
+/*-------------------- Scrollbar ---------------------*/
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do "pulso" (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.301); /* Cor do "pulso" */
+    border-radius: 3px; /* Borda arredondada */
+}
+
+/* ----------------Sessão 2------------------------ */
+.sessao-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/nosComVoce.jpg);
+    background-color: rgba(0, 0, 0, 0.338);
+    background-blend-mode: multiply;
+}
+
+.sessao-2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 80px 0px;
+    width: 100%;
+}
+
+.sessao-2 h1 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+    line-height: 50px;
+    text-shadow: black 1px 1px 2px;
+}
+
+.sessao-2 h1 span {
+    font-weight: 700;
+}
+
+.btn-cadastrar {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 20px 2px;
+    background: #61005d;
+    border: 1.5px solid #61005d;
+    color: #fff;
+}
+
+/*-------------------- ODS ------------------------*/
+ .sessao-ODS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sessao-ODS .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+.box h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.box p{
+    text-align: justify;
+    font-size: 16px;
+    color: black;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+#box-ODS1, #box-ODS2{
+    margin: 0px 50px;
+}
+
+.sessao-ODS img{
+    width: 300px;
 }
