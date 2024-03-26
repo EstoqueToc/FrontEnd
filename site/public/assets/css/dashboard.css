@@ -72,11 +72,10 @@ ul{
 .menu-lateral {
     position: fixed;
     top: 0;
-    left: -260px; 
-    width: 300px;
+    left: -240px; 
+    width: 280px;
     height: 100%;
     background-color: #F3B44C;
-    border-radius: 10px;
     color: #fff;
     padding: 20px;
     transition: 0.3s;
