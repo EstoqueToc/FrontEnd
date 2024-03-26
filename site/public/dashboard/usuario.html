@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/dashboard.css" />
+    <title>EstoqueToc | Usuários</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css"/>
+    <link rel="stylesheet" href="../assets/css/usuario.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"/>
     <link rel="website icon" href="../assets/img/logo.jpeg" />
-    <title>EstoqueToc | Dashboard</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <nav class="menu-lateral" id="menuLateral">
         <div class="botao-menu" onclick="botaoMenu()">
             <img src="../assets/img/menu-hamburguer.png" alt="" />
@@ -27,7 +30,7 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="#">
+                <a href="../dashboard/dashboard.html">
                     <span class="icone"></span>
                     <span class="texto">Página Inicial</span>
                 </a>
@@ -38,12 +41,6 @@
                     <span class="texto">Estoque <img src="../assets/img/estoque-pronto.png" alt=""></span>
                 </a>
             </li>
-            <!-- <li class="item-menu">
-                <a href="#">
-                    <span class="icone"></span>
-                    <span class="texto">Vendas<img src="../assets/img/crescimento.png" alt=""></span>
-                </a>
-            </li> -->
             <li class="item-menu">
                 <a href="#">
                     <span class="icone"></span>
@@ -76,18 +73,66 @@
             </li>
         </ul>
     </nav>
-   
-    <script>
-        function botaoMenu() {
-            var menu = document.getElementById("menu");
-            var botaoMenuImg = document.getElementById("botaoMenuImg");
 
-            menuLateral.classList.toggle("ver-menu");
-            botaoMenuImg.style.display = menuLateral.classList.contains("ver-menu") ? "none" : "block";
+    <div class="container-usuario">
+        <h2>Usuários <button>Adicionar Novo <img src="../assets/img/adicionar-usuario.png" alt=""></button></h2>    
+    </div> 
 
-            var content = document.querySelector(".content");
-            content.classList.toggle("content-shift");
-        }
-    </script>
+    <div class="divBusca">
+        <input type="text" class="txtBusca" placeholder="Buscar..."/>
+        <button class="btnBusca">Buscar</button>
+    </div>
+
+    <hr>
+    <div class="container-tabela">
+        <table class="usuario-tabela">
+            <thead>
+              <tr>
+                <th>Nome de Usuário</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Função</th>
+                <th>Status</th>
+                <th>Editar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>raquelmiy</td>
+                <td>Raquel Guimarães</td>
+                <td>raquel@example.io</td>
+                <td>Admin</td>
+                <td>Ativo</td>
+                <td><img src="../assets/img/editar.png" alt=""></td>
+              </tr>
+              <tr>
+                <td>arthurmiy</td>
+                <td>Arthur Ciliberti</td>
+                <td>arthur@example.io</td>
+                <td>Admin</td>
+                <td>Inativo</td>
+                <td><img src="../assets/img/editar.png" alt=""></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 EstoqueToc. Todos os direitos reservados.</p>
+    </footer>
+    
+
 </body>
 </html>
+<script>
+    function botaoMenu() {
+        var menu = document.getElementById("menu");
+        var botaoMenuImg = document.getElementById("botaoMenuImg");
+
+        menuLateral.classList.toggle("ver-menu");
+        botaoMenuImg.style.display = menuLateral.classList.contains("ver-menu") ? "none" : "block";
+
+        var content = document.querySelector(".content");
+        content.classList.toggle("content-shift");
+    }
+</script>
