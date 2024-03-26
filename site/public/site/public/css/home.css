@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #fffffe;
+    font-family: Poppins, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- Navbar ---------------------------- */
+
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  header{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    background-color: #202324;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+  }
+  
+  header img{
+      width: 60px;
+      margin-left: 5px;
+      margin-top: 2px;
+  }
+  
+  header ul{
+    list-style: none;
+  }   
+  
+  header ul li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  button{
+    padding: 8px;
+    background-color: #fff;
+    color: #004D3D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    transition: 0.6s;
+  }
+  
+  button:active {
+    color: white;
+    transform: translateY(0.2rem);
+    border: 1px solid white;
+   }
+   
+   button:hover:not(:disabled) {
+    background: #345b01;
+    color: white;
+    transform: scale(1.1);
+    border: 1px solid white;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+   
+/*-------------------Sessão Inicial-------------------*/
+
+.contentImage img{
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------Metas-------------------*/
+
+.metas h2{
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .sessao-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sessao-1 h1{
+    color: #202324;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.metas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    transition: 0.6s;
+    border-radius: 10px;
+    height: 50vh;
+}
+
+.box h2, .box p{
+    text-align: center;
+    font-size: 16px;
+    color: #202324;
+    text-shadow:  rgb(207, 207, 207) 0.5px 0.5px 6px;
+}
+
+.box p{
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+#box-1, #box-3{
+    background-color: #edb964;
+    margin: 15px;
+}
+
+#box-2, #box-4{
+    background-color: #CE8132;
+    margin: 15px;
+}
+
+/*-------------------- Somos Mais ---------------------*/
+
+.somosMais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #edb964;
+    color: white;
+    font-size: 16px;
+    margin: 35px 0px ;
+}
+
+.somosMais span{
+    font-size: 16px;
+    color: #61005d; /*c6b1ff*/
+    cursor: pointer;
+}
+
+/* ----------------Sessão 2------------------------ */
+
+.container {
+    position: relative;
+}
+
+.content-2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content-2 h1 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+    line-height: 50px;
+    text-shadow: black 1px 1px 2px;
+}
+
+.sessao-2 h1 span {
+    font-weight: 700;
+}
+
+#btn-cadastrar {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 43px;
+    padding: 0 20px 2px;
+    background: #61005d;
+    border: 1.5px solid #61005d;
+    color: #fff;
+    display: flex;
+    justify-content: first baseline;
+}
+
+#nosComVoce {
+    width: 90%; 
+    height: 80vh;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+/*--DADOS--*/
+
+.h3-sobre{
+    font-size: 200px!important;
+    color: #CE8132;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.h3-sobre:hover{
+    transform: scale(1.1);
+    color:#edb964;
+    transition: ease 1s;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #202324;
+  }
+
+  .posicoesb .texto, .posicoes .texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  
+
+  .posicoesb .texto{
+  margin-right: 5%;
+  }
+  
+  .posicoesb {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 80%;
+  }
+  
+  .posicoes .texto{
+    margin-left: 5%;
+  }
+  
+  .posicoes {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    max-width: 80%;
+  }
+
+  /*-------------------- ODS ------------------------*/
+
+  .pilares{
+    display: flex;
+    justify-content: space-around;
+    color: #202324;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 40px;
+}
+ 
+.ODS08, .ODS16{
+    background-color: #fffffe50;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 35px 0px;
+}
+
+.ODS16 img, .ODS08 img{
+    width: 300px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.ODS {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+    text-align: center;
+    background-color: #edb964;
+}
+
+.ODS08 p, .ODS16 p {
+    font-size: 16px;
+    color: #202324;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 35px;
+  }
+
+  /*-------------------- Comtate-nos ---------------------*/
+.teste{
+    background-image: url('../assets/img/contato.jpeg');
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+  .containerContato {
+    background-color: #fffffe70;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label, .input, .textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input[type="text"], .input[type="email"], .textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#enviarForm {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#enviarForm:hover {
+    background-color: #CE8132;
+}
+
+/*-------------------- Footer ---------------------*/
+.footer {
+    background-color: #202324;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+  /*-------------------- Scrollbar ---------------------*/
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do "pulso" (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.301); /* Cor do "pulso" */
+    border-radius: 3px; /* Borda arredondada */
+}
+
+
+
+
+
+
+
+
+
+
