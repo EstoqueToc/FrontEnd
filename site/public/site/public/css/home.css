@@ -143,8 +143,7 @@ header .content{
 .box h2, .box p{
     text-align: center;
     font-size: 16px;
-    color: #202324;
-    text-shadow:  rgb(207, 207, 207) 0.5px 0.5px 6px;
+    color: whitesmoke;
 }
 
 .box p{
@@ -298,7 +297,6 @@ header .content{
 }
  
 .ODS08, .ODS16{
-    background-color: #fffffe50;
     border-radius: 10px;
     padding: 10px;
     margin: 35px 0px;
@@ -316,12 +314,12 @@ header .content{
     align-items: center;
     margin-top: 35px;
     text-align: center;
-    background-color: #edb964;
+    background-color: #CE8132;
 }
 
-.ODS08 p, .ODS16 p {
+.ODS08 p, .ODS h3, .ODS16 p, .ODS h3{
     font-size: 16px;
-    color: #202324;
+    color: whitesmoke;
     text-align: center;
     width: 500px;
     margin-bottom: 35px;
