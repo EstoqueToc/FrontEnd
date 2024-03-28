@@ -285,6 +285,28 @@ header .content{
     max-width: 80%;
   }
 
+
+  /*-----------------BLOG------------------*/
+  .blogContainer{
+    background-color: #CE8132;
+  }
+
+  .blog{
+    display: flex;
+    justify-content: center;
+  }
+
+  .blogMensagem{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #202324;
+  }
+
+  .blog iframe{
+    margin-bottom: 35px;
+    margin-top: 10px;
+  }
+
   /*-------------------- ODS ------------------------*/
 
   .pilares{
@@ -314,12 +336,11 @@ header .content{
     align-items: center;
     margin-top: 35px;
     text-align: center;
-    background-color: #CE8132;
 }
 
 .ODS08 p, .ODS h3, .ODS16 p, .ODS h3{
     font-size: 16px;
-    color: whitesmoke;
+    color: #202324;
     text-align: center;
     width: 500px;
     margin-bottom: 35px;
